@@ -2,7 +2,7 @@ import { assert }          from 'chai';
 
 import { onHandleVirtual } from '../../src/index.js';
 
-const event = { data: { code: [] }};
+const event = { data: { code: [] } };
 
 suite('Plugin:', () =>
 {
