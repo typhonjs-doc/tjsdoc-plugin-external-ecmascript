@@ -193,11 +193,12 @@ const code = `
 `;
 
 /**
- * Loads the external references defined above.
+ * Adds external references to be processed.
  *
- * @param {PluginEvent} ev - PluginEvent from TJSDoc.
+ * @param {PluginEvent} ev - A plugin event.
  */
 export function onHandleVirtual(ev)
 {
-   ev.data.code.push(code);
+   ev.data.code.push({ code, message: __filename });
 }
+
