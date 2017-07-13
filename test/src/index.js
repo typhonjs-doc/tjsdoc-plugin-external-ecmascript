@@ -1,6 +1,6 @@
 import { assert }          from 'chai';
 
-import { onHandleVirtual } from '../../src/index.js';
+import { onHandleVirtualAsync } from '../../src/index.js';
 
 const event = { data: { code: [] } };
 
@@ -8,12 +8,12 @@ suite('Plugin:', () =>
 {
    test('onHandleVirtual is function', () =>
    {
-      assert.isFunction(onHandleVirtual);
+      assert.isFunction(onHandleVirtualAsync);
    });
 
-   test('onHandleVirtual returns code', () =>
+   test('onHandleVirtualAsync returns code', () =>
    {
-      onHandleVirtual(event);
+      onHandleVirtualAsync(event);
 
       assert.isArray(event.data.code);
       assert.isString(event.data.code[0].code);

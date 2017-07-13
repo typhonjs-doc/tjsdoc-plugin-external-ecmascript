@@ -199,7 +199,7 @@ const code = `
  *
  * @param {PluginEvent} ev - A plugin event.
  */
-export function onHandleVirtual(ev)
+export function onHandleVirtualAsync(ev)
 {
    ev.data.code.push({ code, filePath: path.relative(process.cwd(), __filename) });
 }
