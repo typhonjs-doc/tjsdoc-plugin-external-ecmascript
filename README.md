@@ -1,4 +1,4 @@
 # tjsdoc-plugin-external-ecmascript
 Provides built-in external references for [ECMAScript global objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects).
 
-Please report any issues in [TJSDoc](https://github.com/typhonjs-doc/tjsdoc/issues).
+For essential information pertaining to TJSDoc please refer to [tjsdoc](https://github.com/typhonjs-node-tjsdoc/tjsdoc).
